@@ -83,4 +83,4 @@ H2 console login
 
 H2 persisted record
 
-(Add screenshot here)
+![H2 persisted record](Screenshot%202026-03-31%20at%2017.53.21.png)
