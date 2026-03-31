@@ -58,7 +58,7 @@ GET /api/driver-documents?driverId=123&fileName=expired-license.pdf
   "rejectionReason": "Document is expired"
 }
 
-Current business rule
+##Current business rule
 if the file name contains expired, the document is marked as REJECTED
 otherwise, the document is marked as PENDING
 Database
