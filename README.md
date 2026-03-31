@@ -32,4 +32,3 @@ It currently includes:
 Response:
 
 `Driver Validation API is running`
-
