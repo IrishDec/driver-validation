@@ -80,16 +80,16 @@ The API now persists driver document records, including:
 
 ## Demo screenshots
 
-### API response
-
-(Add screenshot here)
-
 ### H2 console login
 
 ![H2 login](Screenshot%202026-03-31%20at%2017.57.07.png)
 
+### H2 console opened
+
+![H2 console opened](Screenshot%202026-03-31%20at%2017.53.21.png)
+
 ### H2 persisted record
 
-![H2 persisted record](Screenshot%202026-03-31%20at%2017.53.21.png)
+![H2 persisted record](Screenshot%202026-03-31%20at%2017.57.45.png)
 
 
