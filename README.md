@@ -1,27 +1,39 @@
 # Driver Validation API
 
-Proof of concept Kotlin and Spring Boot API for driver document validation.
+Proof of concept Kotlin Spring Boot API and Next.js frontend for driver document validation.
 
 ## What it does
 
-This project simulates a small backend service for driver document validation.
+This project simulates a small driver document validation system with:
 
-It includes:
-
-* health check endpoint
-* driver document validation endpoint
+* Spring Boot backend API
+* Next.js frontend UI
 * simple business rule to reject expired documents
 * H2 in-memory database persistence
 * Spring Data JPA repository layer
-* clean package structure with controller, service, model, and repository layers
+* clean package structure for controller, service, model, and repository layers
 
 ## Tech stack
+
+### Backend
 
 * Kotlin
 * Spring Boot
 * Spring Data JPA
 * H2 Database
 * Gradle
+
+### Frontend
+
+* Next.js
+* TypeScript
+* React
+
+## Project structure
+
+* `src/` — Spring Boot backend
+* `frontend/` — Next.js frontend
+* `screenshots/` — demo screenshots
 
 ## Endpoints
 
@@ -107,20 +119,66 @@ The API persists driver document records including:
 
 ## Run locally
 
+### Backend
+
+From the project root:
+
 ```
 ./gradlew bootRun
 ```
 
-Open:
+Backend runs on:
 
-* API: `http://localhost:8080/api/health`
-* H2 console: `http://localhost:8080/h2-console`
+```
+http://localhost:8080
+```
+
+Health check:
+
+```
+http://localhost:8080/api/health
+```
+
+H2 console:
+
+```
+http://localhost:8080/h2-console
+```
+
+### Frontend
+
+From the `frontend` folder:
+
+```
+npm install
+npm run dev
+```
+
+Frontend runs on:
+
+```
+http://localhost:3000
+```
 
 ## H2 console settings
 
 * JDBC URL: `jdbc:h2:mem:testdb`
 * Username: `sa`
 * Password: leave blank
+
+## Example test cases
+
+Use these values in the frontend form:
+
+Pending example:
+
+* Driver ID: `123`
+* File name: `taxi-license.pdf`
+
+Rejected example:
+
+* Driver ID: `123`
+* File name: `expired-license.pdf`
 
 
 
