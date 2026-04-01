@@ -88,6 +88,8 @@ driver id
 file name
 document status
 rejection reason
+
+
 Demo screenshots
 Frontend demo - rejected document
 
