@@ -1,10 +1,10 @@
 # Driver Validation API
 
-Proof of concept Kotlin and Spring Boot API for driver document validation.
+Proof of concept Kotlin and Spring Boot API for driver document validation, now connected to a simple frontend demo UI.
 
 ## What it does
 
-This project simulates a small backend service for driver document validation.
+This project simulates a small backend service for driver document validation and displays results through a simple frontend interface.
 
 It currently includes:
 
@@ -13,7 +13,17 @@ It currently includes:
 - simple business rule to reject expired documents
 - H2 in-memory database persistence
 - Spring Data JPA repository layer
+- frontend demo UI connected to the backend
 - clean package structure with controller, service, model, and repository layers
+
+## Frontend demo
+
+A simple Next.js frontend is connected to the backend and allows a user to:
+
+- enter a driver id
+- enter a file name
+- submit a validation request
+- view the saved result returned from the API
 
 ## Tech stack
 
@@ -22,6 +32,9 @@ It currently includes:
 - Spring Data JPA
 - H2 Database
 - Gradle
+- Next.js
+- TypeScript
+- Tailwind CSS
 
 ## Endpoints
 
@@ -50,7 +63,7 @@ Example response:
 ```
 Rejected example:
 
-`GET /api/driver-documents?driverId=123&fileName=expired-license.pdf`
+GET /api/driver-documents?driverId=123&fileName=expired-license.pdf
 
 ```json
 {
@@ -61,35 +74,31 @@ Rejected example:
   "rejectionReason": "Document is expired"
 }
 ```
-## Current business rule
-
-- if the file name contains `expired`, the document is marked as `REJECTED`
-- otherwise, the document is marked as `PENDING`
-
-## Database
+Current business rule
+if the file name contains expired, the document is marked as REJECTED
+otherwise, the document is marked as PENDING
+Database
 
 This project uses an H2 in-memory database so it can be reviewed and run locally without external database setup.
 
 The API now persists driver document records, including:
 
-- generated id
-- driver id
-- file name
-- document status
-- rejection reason
+generated id
+driver id
+file name
+document status
+rejection reason
+Demo screenshots
+Frontend demo - rejected document
 
-## Demo screenshots
+Frontend demo - pending document
 
-### H2 console login
+H2 console login
 
-![H2 login](Screenshot%202026-03-31%20at%2017.57.07.png)
+H2 console opened
 
-### H2 console opened
+H2 persisted record
 
-![H2 console opened](Screenshot%202026-03-31%20at%2017.53.21.png)
 
-### H2 persisted record
-
-![H2 persisted record](Screenshot%202026-03-31%20at%2017.57.45.png)
 
 
