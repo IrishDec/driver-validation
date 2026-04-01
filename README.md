@@ -87,23 +87,23 @@ The API persists driver document records including:
 
 ### Frontend demo rejected document
 
-![Frontend rejected document](frontend-rejected.png)
+![Frontend rejected document](screenshots/frontend-rejected.png)
 
 ### Frontend demo pending document
 
-![Frontend pending document](frontend-pending.png)
+![Frontend pending document](screenshots/frontend-pending.png)
 
 ### H2 console login
 
-![H2 console login](h2-console-login.png)
+![H2 console login](screenshots/h2-console-login.png)
 
 ### H2 console opened
 
-![H2 console opened](h2-console-opened.png)
+![H2 console opened](screenshots/h2-console-opened.png)
 
 ### H2 persisted record
 
-![H2 persisted record](h2-persisted-record.png)
+![H2 persisted record](screenshots/h2-persisted-record.png)
 
 ## Run locally
 
