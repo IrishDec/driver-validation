@@ -78,9 +78,9 @@ Current business rule
 if the file name contains expired, the document is marked as REJECTED
 otherwise, the document is marked as PENDING
 Database
-
+```
 This project uses an H2 in-memory database so it can be reviewed and run locally without external database setup.
-
+```
 The API persists driver document records including:
 
 generated id
