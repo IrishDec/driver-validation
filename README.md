@@ -73,14 +73,14 @@ GET /api/driver-documents?driverId=123&fileName=expired-license.pdf
   "status": "REJECTED",
   "rejectionReason": "Document is expired"
 }
-```
+
 Current business rule
 if the file name contains expired, the document is marked as REJECTED
 otherwise, the document is marked as PENDING
 Database
-```
+
 This project uses an H2 in-memory database so it can be reviewed and run locally without external database setup.
-```
+
 The API persists driver document records including:
 
 generated id
@@ -90,18 +90,13 @@ document status
 rejection reason
 Demo screenshots
 Frontend demo - rejected document
-frontend-rejected.png
 
 Frontend demo - pending document
-frontend-pending.png
 
-H2 console login
 H2 console login
 
 H2 console opened
-H2 console opened
 
-H2 persisted record
 H2 persisted record
 
 
