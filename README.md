@@ -81,26 +81,27 @@ Database
 
 This project uses an H2 in-memory database so it can be reviewed and run locally without external database setup.
 
-The API now persists driver document records, including:
+The API persists driver document records including:
 
 generated id
 driver id
 file name
 document status
 rejection reason
-
-
 Demo screenshots
 Frontend demo - rejected document
+frontend-rejected.png
 
 Frontend demo - pending document
+frontend-pending.png
 
+H2 console login
 H2 console login
 
 H2 console opened
+H2 console opened
 
 H2 persisted record
-
-
+H2 persisted record
 
 
